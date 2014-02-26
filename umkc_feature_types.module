@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the umkc-feature-types feature.
+ */
+
+include_once 'umkc_feature_types.features.inc';
