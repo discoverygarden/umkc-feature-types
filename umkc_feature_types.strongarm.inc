@@ -192,8 +192,15 @@ function umkc_feature_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_export_existing';
-  $strongarm->value = 'revision';
+  $strongarm->value = 'skip';
   $export['node_export_existing'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_menu_page';
+  $strongarm->value = 0;
+  $export['node_export_reset_menu_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -215,6 +222,13 @@ function umkc_feature_types_strongarm() {
   $strongarm->name = 'node_export_reset_menu_umkc_islandora_object_type';
   $strongarm->value = 0;
   $export['node_export_reset_menu_umkc_islandora_object_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_path_page';
+  $strongarm->value = 0;
+  $export['node_export_reset_path_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -261,6 +275,13 @@ function umkc_feature_types_strongarm() {
   $strongarm->name = 'node_submitted_slideshow';
   $strongarm->value = 0;
   $export['node_submitted_slideshow'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_frontpage';
+  $strongarm->value = 'home';
+  $export['site_frontpage'] = $strongarm;
 
   return $export;
 }
