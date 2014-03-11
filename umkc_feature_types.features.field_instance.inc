@@ -88,6 +88,7 @@ function umkc_feature_types_field_default_field_instances() {
       'default_image' => 0,
       'file_directory' => 'slideshow',
       'file_extensions' => 'png gif jpg jpeg',
+      'image_field_caption' => 1,
       'max_filesize' => '',
       'max_resolution' => '960x375',
       'min_resolution' => '960x375',
